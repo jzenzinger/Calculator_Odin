@@ -1,0 +1,96 @@
+:root {
+    --top: #7e7b7b;
+    --bottom: #010101;
+    --font: #ddd;
+    --screen: #363636;
+    --calculator: #010101;
+    --background: #0e0e0e;
+    --btn: #363636;
+    --btn-hover: #2b2b2b;
+    --btn-active: #282828;
+    --btn-red: #B30000;
+    --btn-red-hover: #90031B;
+    --btn-red-active: #90031B;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+}
+
+body {
+  background-color: linear-gradient(var(--top), var(--bottom));
+  color: var(--font);
+  font-family: sans-serif;
+}
+
+button {
+  color: var(--font);
+}
+
+.calculator {
+    max-width: 380px;
+    margin: 5em auto;
+}
+
+.screen {
+  min-height: 80px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: var(--screen);
+  font-size: 29px;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.button-clear-wrapper {
+    padding-bottom: 0.9em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.8em;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.btn {
+  padding: 20px;
+  border: 2px var(--border) solid;
+  border-radius: 5px;
+  background-color: var(--btn);
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.btn:active {
+  background-color: var(--btn-active);
+}
+
+.btn-red {
+  background-color: var(--btn-red);
+}
+
+.btn-red:hover {
+  background-color: var(--btn-red-hover);
+}
+
+.btn-red:active {
+  background-color: var(--btn-red-active);
+}
